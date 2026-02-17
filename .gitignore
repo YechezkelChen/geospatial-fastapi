@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+
+# Docker
+*.log
+mongo_data/
+
+# IDE / Editor
+.vscode/
+.idea/
