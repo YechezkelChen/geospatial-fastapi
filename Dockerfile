@@ -2,8 +2,8 @@ FROM python:3.12
 
 WORKDIR /app
 
-RUN pip install uv
-RUN uv sync
+COPY uv.lock pyproject.toml ./
+RUN uv sync --no-dev --no-cache
 
 COPY . .
 
